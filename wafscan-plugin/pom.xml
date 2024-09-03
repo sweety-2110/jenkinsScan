@@ -11,11 +11,12 @@
 
   <groupId>io.jenkins.plugins</groupId>
   <artifactId>wafscan</artifactId>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
+
   <packaging>hpi</packaging>
 
   <name>Waf Scan Plugin</name>
-  <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
+  <url>https://github.com/sweety-2110/jenkinsScan/${project.artifactId}-plugin</url>
   <licenses>
     <license>
       <name>MIT License</name>
@@ -28,6 +29,12 @@
     <tag>wafscan-1.0</tag>
     <url>https://github.com/${gitHubRepo}</url>
   </scm>
+  <distributionManagement>
+    <repository>
+      <id>jenkins-snapshots</id>
+      <url>https://repo.jenkins-ci.org/snapshots/</url>
+    </repository>
+  </distributionManagement>
 
   <properties>
     <revision>1.0</revision>
@@ -35,7 +42,7 @@
 
     <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
     <jenkins.version>2.440.3</jenkins.version>
-    <gitHubRepo>jenkinsci/${project.artifactId}-plugin</gitHubRepo>
+    <gitHubRepo>sweety-2110/jenkinsScan/${project.artifactId}-plugin</gitHubRepo>
     <plugin.logo>logo.png</plugin.logo>
 
     <spotless.check.skip>false</spotless.check.skip>
@@ -98,4 +105,5 @@
       <url>https://repo.jenkins-ci.org/public/</url>
     </pluginRepository>
   </pluginRepositories>
+
 </project>
